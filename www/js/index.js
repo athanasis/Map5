@@ -27,12 +27,8 @@ var app = {
     receivedElement.setAttribute('style', 'display:block;');
 
     console.log('Received Event: ' + id);
-
-    // --------------------------------------------------------------------
-    // Load the Esri modules for creating a map and populate the
-    // map div element.
-    // --------------------------------------------------------------------
     var map;
+
     require(["esri/map", "dojo/domReady!"], function(Map) {
       map = new Map("map", {
         basemap: "topo",  //For full list of pre-defined basemaps, navigate to http://arcg.is/1JVo6Wd
